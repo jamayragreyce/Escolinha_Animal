@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cadastro de pets na Escolinha Animal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel='stylesheet' href='./assets/css/style.css'>
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+</head>
+
+<body>
+    <script src="./assets/js/cadastrar-pets.js"></script>
+    <header class="cabecalhoPrincipal">
+        <div class="container">
+            <a class="logo" href="index.html">
+                <img class="logo-cabecalho" alt="Logo da Escolinha Animal" src="./assets/img/logo-cabecalho.svg" width="250px" height="80px">
+            </a>
+            <nav class="navegacaoLinks">
+                <a class="link-lista" href="listar-pets.html">Ver lista de Pets</a>
+                <a class="link-cadastro" href="cadastrar-pet.html">
+                    <button class="botao-cadastro">Cadastrar Pet</button>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="formularioCadastro">
+        <div class="formulario">
+            <form class="caixa" id="formCadastro" onsubmit="criarPet(); return false">
+                <h1 class="tituloFormulario">Cadastro de um novo Pet</h1>
+                <div class="areaUpload" id="imagemPet">
+                    <label for="inputPetPhoto" class="botaoUpload">
+                        <p class="textoUpload">+ Clique para adicionar foto</p>
+                    </label>
+                    <input type="file" name="" id="inputPetPhoto" class="imagemPerfil" accept="image/jpeg, image/png, image/jpg" hidden />
+                </div>
+                <span class="inputs">
+                    <input type="text" id="inputPetName" class="inputNomePet" required>
+                    <label for="inputPetName">Nome do Pet</label>
+                </span>
+                <span class="inputs">
+                    <input type="text" id="inputOwnerName" class="inputNomeDono" required>
+                    <label for="inputOwnerName">Nome do dono</label>
+                </span>
+                <span class="botoes">
+                    <a href="index.html"><button class="botaoCancelar" type="button" formnovalidate>Cancelar cadastro</button></a>
+                    <a href=""><button class="botaoCadastrar" id="botaoCadastro" type="submit">Salvar dados</button></a>
+                </span>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

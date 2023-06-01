@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lançamento de notas na Escolinha Animal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel='stylesheet' href='./assets/css/style.css'>
+    <link rel="stylesheet" href="./assets/css/lancar-notas.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <script src="./assets/js/lancar-notas.js"></script>
+</head>
+
+<body>
+    <header class="cabecalhoPrincipal">
+        <div class="container">
+            <a class="logo" href="index.html">
+                <img class="logo-cabecalho" alt="Logo da Escolinha Animal" src="./assets/img/logo-cabecalho.svg" width="250px" height="80px">
+            </a>
+
+            <nav class="navegacaoLinks">
+                <a class="link-lista" href="listar-pets.html">Ver lista de Pets</a>
+                <a class="link-cadastro" href="cadastrar-pet.html">
+                    <button class="botao-cadastro">Cadastrar Pet</button>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="lancarNotas">
+        <form class="caixa" id="formNotas" onsubmit="lancarNotas(); return false">
+            <div class="cabecalhoLancarNotas">
+                <a href="./listar-pets.html">Voltar</a>
+                <div class="dadosPet">
+                    <img id="fotoPet" width="50px" height="50px">
+                    <h1 id="nomePet"></h1>
+                </div>
+                <span id="data"></span>
+            </div>
+
+            <ul>
+                <li class="itemLancarNotas">
+                    <div>
+                        <h2>Socialização</h2>
+                        <span>O Pet socializa bem com outros pets?</span>
+                    </div>
+                    <div class="patas" id="socializacao">
+                    </div>
+                </li>
+
+                <li class="itemLancarNotas">
+                    <div>
+                        <h2>Sonequinha</h2>
+                        <span>O Pet tira bastante soneca durante o dia?</span>
+                    </div>
+                    <div class="patas" id="sonequinha">
+                    </div>
+                </li>
+
+                <li class="itemLancarNotas">
+                    <div>
+                        <h2>Alimentação</h2>
+                        <span>O Pet está comendo a ração direitinho?</span>
+                    </div>
+                    <div class="patas" id="alimentacao">
+                    </div>
+                </li>
+
+                <li class="itemLancarNotas">
+                    <div>
+                        <h2>Brincadeiras</h2>
+                        <span>O Pet participa das brincadeiras em grupo?</span>
+                    </div>
+                    <div class
